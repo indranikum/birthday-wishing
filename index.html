@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+            
+        }
+        .container {
+            
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff5f5f;
+            font-size: 36px;
+        }
+        p {
+            
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff5f5f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday! 🎉</h1>
+        <p>Dear Prashant sir, on this special day, may the wisdom you've shared with us continue to light our path</p>
+        <p>May your days be filled with the same inspiration and joy you've brought to the classroom.</p>
+        <button id="surpriseButton">Click for a Surprise</button>
+    </div>
+
+    <script>
+        // JavaScript for a surprise animation
+        const button = document.getElementById("surpriseButton");
+
+        function playSurprise() {
+            const container = document.querySelector(".container");
+            container.innerHTML = `
+                <h1>🎈🍰🎁 Surprise! 🎁🍰🎈</h1>
+                <img src="https://media3.giphy.com/media/eedT0Gs9T8nIHfIvXy/200w.gif?cid=6c09b9522ssisntywdgpljlv7814zrnxbbhygwb9dk83minv&ep=v1_gifs_search&rid=200w.gif&ct=g">
+                <p>Hope you have an amazing day!</p>
+            `;
+        }
+
+        button.addEventListener("click", playSurprise);
+    </script>
+</body>
+</html>
